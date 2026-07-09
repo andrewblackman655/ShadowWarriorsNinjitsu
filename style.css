@@ -35,9 +35,10 @@
   }
   .nav-brand{ font-family:'Playfair Display', serif; font-size:17px; letter-spacing:0.04em; color:var(--rice); }
   .nav-brand span{ color:var(--crimson); }
-  .nav-links{ display:flex; gap:26px; }
-  .nav-links a{ font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel); }
+  .nav-links{ display:flex; align-items:center; gap:26px; }
+  .nav-links a{ font-size:12px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel); }
   .nav-links a:hover{ color:var(--rice); }
+  .nav-kanji{ font-family:'Playfair Display', serif; font-size:15px; letter-spacing:0.15em; color:var(--crimson); margin-left:4px; }
   .nav-cta{
     font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
     border:1px solid var(--crimson); color:var(--rice);
