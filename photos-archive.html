@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Photo Archive — Shadow Warriors Ninjitsu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-hero{
+    position:relative; min-height:44vh;
+    display:flex; align-items:flex-end;
+    padding:64px 32px 56px;
+    background:
+      linear-gradient(180deg, rgba(17,18,20,0.3) 0%, rgba(17,18,20,0.7) 60%, rgba(17,18,20,0.98) 100%),
+      url('photos/youth-ceremony-group.jpg') center 30% / cover no-repeat;
+  }
+  .breadcrumb{ font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel); margin-bottom:16px; display:block; }
+  .breadcrumb a{ color:var(--steel); } .breadcrumb a:hover{ color:var(--rice); }
+
+  .cat-block{ margin-bottom:64px; }
+  .cat-title{ font-family:'Playfair Display', serif; font-size:20px; color:var(--rice); margin-bottom:4px; }
+  .cat-count{ font-size:12px; color:var(--steel); letter-spacing:0.04em; margin-bottom:22px; }
+  .gallery-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+  .gallery-item{ position:relative; aspect-ratio:4/3; overflow:hidden; border:1px solid var(--hairline); background:var(--charcoal); }
+  .gallery-item img{ width:100%; height:100%; object-fit:cover; filter:grayscale(35%); transition:transform .4s ease, filter .4s ease; }
+  .gallery-item:hover img{ transform:scale(1.05); filter:grayscale(0%); }
+  .gallery-caption{ position:absolute; left:0; right:0; bottom:0; padding:10px 12px; background:linear-gradient(0deg, rgba(17,18,20,0.92), transparent); font-size:11.5px; letter-spacing:0.02em; color:var(--rice); }
+  @media (max-width:760px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  .more-note{ text-align:center; color:var(--steel); font-size:13px; margin-top:12px; border:1px dashed var(--hairline); padding:24px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">SHADOW <span>WARRIORS</span></div>
+  <div class="nav-links">
+    <a href="founder.html">Founder</a>
+    <a href="about-the-system.html">The System</a>
+    <a href="training.html">Training</a>
+    <a href="photos.html">Photos</a>
+    <a href="shadow-warriors-legacy-homepage.html#reviews">Reviews</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Join the Interest List</a>
+</nav>
+
+<header class="page-hero">
+  <div class="fade" style="max-width:640px;">
+    <span class="breadcrumb"><a href="shadow-warriors-legacy-homepage.html">Home</a> / <a href="photos.html">Photos</a> / Full Archive</span>
+    <h1 class="serif" style="font-size:clamp(30px,5vw,46px); color:var(--rice); line-height:1.1;">Full Photo Archive</h1>
+  </div>
+</header>
+
+<section>
+  <div class="inner">
+
+    <div class="cat-block">
+      <div class="cat-title">Founders &amp; Legacy</div>
+      <div class="cat-count">2 photos</div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="photos/founders.jpg" alt="Founders and senior instructors"><div class="gallery-caption">Founders &amp; Senior Instructors</div></div>
+        <div class="gallery-item"><img src="photos/founder-collage.jpg" alt="Steven Williams with instructors, belt ceremonies and rank photos"><div class="gallery-caption">Instructor Portraits &amp; Rank Photos</div></div>
+        <div class="gallery-item"><img src="photos/founders-casual-group.jpg" alt="Instructors together off the mat"><div class="gallery-caption">Instructor Fellowship</div></div>
+      </div>
+    </div>
+
+    <div class="cat-block">
+      <div class="cat-title">Ceremonies</div>
+      <div class="cat-count">6 photos</div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="photos/hero-ceremony-collage.jpg" alt="Belt ceremony contact sheet, red gi promotions"><div class="gallery-caption">Belt Ceremony — Full Collection</div></div>
+        <div class="gallery-item"><img src="photos/ceremony-1.jpg" alt="Belt ceremony group photo"><div class="gallery-caption">Belt Ceremony</div></div>
+        <div class="gallery-item"><img src="photos/ceremony-group-2005.jpg" alt="Full dojo group photo, December 2005"><div class="gallery-caption">Full Dojo — December 2005</div></div>
+        <div class="gallery-item"><img src="photos/ceremony-belt-promotion.jpg" alt="Adult belt promotion group"><div class="gallery-caption">Belt Promotion</div></div>
+        <div class="gallery-item"><img src="photos/ceremony-group-red-black.jpg" alt="Instructor group in red and black, December 2005"><div class="gallery-caption">Senior Students — December 2005</div></div>
+        <div class="gallery-item"><img src="photos/ceremony-black-belt-lineup.jpg" alt="Black belt lineup under We Are a Black Belt School banner"><div class="gallery-caption">"We Are a Black Belt School"</div></div>
+      </div>
+    </div>
+
+    <div class="cat-block">
+      <div class="cat-title">Training Sessions</div>
+      <div class="cat-count">5 photos</div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="photos/hero-action.jpg" alt="Technique demonstration"><div class="gallery-caption">Technique Demonstration</div></div>
+        <div class="gallery-item"><img src="photos/training-technique-1.jpg" alt="Instructor demonstrating technique on the mat"><div class="gallery-caption">Technique Training</div></div>
+        <div class="gallery-item"><img src="photos/training-class-kicks.jpg" alt="Adult class practicing kicks"><div class="gallery-caption">Adult Class — Striking Drills</div></div>
+        <div class="gallery-item"><img src="photos/training-jump-kick.jpg" alt="Student performing a jumping kick"><div class="gallery-caption">Jumping Technique Demonstration</div></div>
+        <div class="gallery-item"><img src="photos/training-class-lineup.jpg" alt="Class lined up for training"><div class="gallery-caption">Class in Session</div></div>
+        <div class="gallery-item"><img src="photos/training-weapons-defense-knife.jpg" alt="Knife defense demonstration"><div class="gallery-caption">Weapons Defense — Knife</div></div>
+        <div class="gallery-item"><img src="photos/training-weapons-defense-1.jpg" alt="Stick and weapons defense drill"><div class="gallery-caption">Weapons Retention Drill</div></div>
+        <div class="gallery-item"><img src="photos/training-weapons-defense-crowd.jpg" alt="Weapons defense demonstration in front of class"><div class="gallery-caption">Weapons Defense Demonstration</div></div>
+        <div class="gallery-item"><img src="photos/training-instruction-circle.jpg" alt="Instructor demonstrating for a circle of students"><div class="gallery-caption">Live Instruction</div></div>
+        <div class="gallery-item"><img src="photos/training-technique-2.jpg" alt="Instructors demonstrating a close-quarter control technique"><div class="gallery-caption">Close-Quarter Control Technique</div></div>
+      </div>
+    </div>
+
+    <div class="cat-block">
+      <div class="cat-title">Youth Program</div>
+      <div class="cat-count">3 photos</div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="photos/youth-ceremony-group.jpg" alt="Youth belt ceremony group photo"><div class="gallery-caption">Youth Belt Ceremony</div></div>
+        <div class="gallery-item"><img src="photos/youth-orange-belts.jpg" alt="Youth students, orange belts"><div class="gallery-caption">Youth Program — Orange Belts</div></div>
+        <div class="gallery-item"><img src="photos/youth-training-floor.jpg" alt="Youth class training on the floor"><div class="gallery-caption">Youth Class in Session</div></div>
+      </div>
+    </div>
+
+    <div class="cat-block">
+      <div class="cat-title">Events</div>
+      <div class="cat-count">4 photos</div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="photos/event-banquet.jpg" alt="Awards banquet"><div class="gallery-caption">Awards Banquet</div></div>
+        <div class="gallery-item"><img src="photos/event-competition-trophy.jpg" alt="Competition winner with trophy and certificate"><div class="gallery-caption">Tournament Win</div></div>
+        <div class="gallery-item"><img src="photos/event-competition-plaques.jpg" alt="Competitor with award plaques"><div class="gallery-caption">Championship Plaques</div></div>
+        <div class="gallery-item"><img src="photos/event-tournament-team.jpg" alt="Team at a tournament with trophies"><div class="gallery-caption">Tournament Team</div></div>
+      </div>
+    </div>
+
+    <div class="cat-block">
+      <div class="cat-title">Credentials &amp; Achievements</div>
+      <div class="cat-count">2 photos</div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="photos/credential-hall-of-fame.jpg" alt="Masters 2004 Hall of Fame certificate, Grandmaster Steven Williams"><div class="gallery-caption">2004 Hall of Fame Induction</div></div>
+        <div class="gallery-item"><img src="photos/credential-weapons-wall.jpg" alt="Championship medallions and traditional weapons wall"><div class="gallery-caption">Championship Honors &amp; Weapons</div></div>
+        <div class="gallery-item"><img src="photos/credential-soke-diploma.jpg" alt="Shadow Warriors Ninjitsu diploma certifying Steven Williams as Soke, Grandmaster, 10th Degree Red Belt"><div class="gallery-caption">Soke &amp; Grandmaster Certification — Nov. 9, 2001</div></div>
+        <div class="gallery-item"><img src="photos/credential-trophy-wall.jpg" alt="Wall of championship trophies, plaques, and certificates"><div class="gallery-caption">Championship Wall</div></div>
+        <div class="gallery-item"><img src="photos/credential-doctorate.jpg" alt="Doctorate of Martial Arts Philosophy and Martial Arts Science, Dr. Steve Williams"><div class="gallery-caption">Doctorate, Martial Arts Science</div></div>
+        <div class="gallery-item"><img src="photos/credential-hall-of-fame-1998-japan.jpg" alt="1998 Golden Global Martial Arts Hall of Fame certificate, Steven Williams, Instructor of the Year"><div class="gallery-caption">1998 Hall of Fame — Instructor of the Year</div></div>
+        <div class="gallery-item"><img src="photos/legacy-collage-poster-2007.jpg" alt="Framed collage of technique photos and belt ranks, 2007"><div class="gallery-caption">2007 System Retrospective</div></div>
+        <div class="gallery-item"><img src="photos/legacy-collage-poster.jpg" alt="Framed collage of technique photos and belt ranks, 2004"><div class="gallery-caption">2004 System Retrospective</div></div>
+        <div class="gallery-item"><img src="photos/credential-black-belt-diploma-creed.jpg" alt="Black belt diploma and student creed"><div class="gallery-caption">Black Belt Diploma &amp; Student Creed</div></div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:12px;"><a href="photos.html" style="font-size:12px; letter-spacing:0.06em; text-transform:uppercase; color:var(--steel);">← Back to Curated Selection</a></div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">SHADOW <span>WARRIORS</span></div>
+  <div class="footer-links">
+    <a href="founder.html">Founder</a>
+    <a href="about-the-system.html">The System</a>
+    <a href="photos.html">Photos</a>
+    <a href="shadow-warriors-legacy-homepage.html#reviews">Reviews</a>
+    <a href="contact.html">Interest List</a>
+  </div>
+  <div class="footer-meta">Shadow Warriors Ninjitsu System — Original Since 1999</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Training — Shadow Warriors Ninjitsu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-hero{
+    position:relative; min-height:48vh;
+    display:flex; align-items:flex-end;
+    padding:64px 32px 56px;
+    background:
+      linear-gradient(180deg, rgba(17,18,20,0.3) 0%, rgba(17,18,20,0.7) 60%, rgba(17,18,20,0.98) 100%),
+      url('photos/training-weapons-defense-knife.jpg') center 30% / cover no-repeat;
+  }
+  .breadcrumb{ font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel); margin-bottom:16px; display:block; }
+  .breadcrumb a{ color:var(--steel); } .breadcrumb a:hover{ color:var(--rice); }
+
+  .status-note{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:56px; padding:20px 24px; border:1px solid var(--hairline); background:var(--charcoal); }
+  .status-note p{ font-size:14px; color:var(--steel); margin:0; }
+  .status-note a{ font-size:12px; letter-spacing:0.06em; text-transform:uppercase; border:1px solid var(--crimson); color:var(--rice); padding:12px 20px; white-space:nowrap; }
+  .status-note a:hover{ background:var(--crimson); }
+
+  .program-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--hairline); border:1px solid var(--hairline); }
+  .program-card{ background:var(--charcoal); padding:34px 26px; position:relative; }
+  .program-status{ font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--crimson); margin-bottom:14px; display:block; }
+  .program-status.soon{ color:var(--steel); }
+  .program-card h3{ font-family:'Playfair Display', serif; font-size:19px; color:var(--rice); margin-bottom:10px; }
+  .program-card p{ font-size:13.5px; color:var(--steel); margin-bottom:20px; line-height:1.6; }
+  .program-link{ font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:var(--crimson); border-bottom:1px solid var(--crimson); padding-bottom:2px; }
+  @media (max-width:800px){ .program-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">SHADOW <span>WARRIORS</span></div>
+  <div class="nav-links">
+    <a href="founder.html">Founder</a>
+    <a href="about-the-system.html">The System</a>
+    <a href="training.html">Training</a>
+    <a href="photos.html">Photos</a>
+    <a href="shadow-warriors-legacy-homepage.html#reviews">Reviews</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Join the Interest List</a>
+</nav>
+
+<header class="page-hero">
+  <div class="fade" style="max-width:640px;">
+    <span class="breadcrumb"><a href="shadow-warriors-legacy-homepage.html">Home</a> / Training</span>
+    <h1 class="serif" style="font-size:clamp(30px,5vw,46px); color:var(--rice); line-height:1.1;">Structured Instruction, Rooted in Tradition</h1>
+  </div>
+</header>
+
+<section>
+  <div class="inner">
+
+    <div class="status-note">
+      <p>Private Lessons, Weapons Training, and Women's Programs are offered exclusively through direct instruction — by design, not by default. Group enrollment opens with our permanent studio.</p>
+      <a href="private-lessons.html">Book a Private Lesson</a>
+    </div>
+
+    <div class="program-grid">
+      <div class="program-card">
+        <span class="program-status">Available Now</span>
+        <h3>Private Lessons</h3>
+        <p>One-on-one instruction under Soke Shidoshi Steven Williams, at your location or ours. The fastest way to begin training in the original system.</p>
+        <a href="private-lessons.html" class="program-link">View program →</a>
+      </div>
+      <div class="program-card">
+        <span class="program-status">Available Now</span>
+        <h3>Weapons Training</h3>
+        <p>Kali, Eskrima, and traditional stick and knife instruction — private or small group, built around weapons retention and real-world defense.</p>
+        <a href="weapons-training.html" class="program-link">View program →</a>
+      </div>
+      <div class="program-card">
+        <span class="program-status">Available Now</span>
+        <h3>Women's Programs</h3>
+        <p>Focused seminars addressing the threats women are statistically most likely to face — practical, direct, no wasted motion.</p>
+        <a href="womens-programs.html" class="program-link">View program →</a>
+      </div>
+      <div class="program-card">
+        <span class="program-status soon">Coming Soon</span>
+        <h3>Adult Self Defense</h3>
+        <p>Structured group classes for adult students of any experience level, launching with our permanent studio.</p>
+        <a href="adult-self-defense.html" class="program-link">View program →</a>
+      </div>
+      <div class="program-card">
+        <span class="program-status soon">Coming Soon</span>
+        <h3>Youth Program</h3>
+        <p>Discipline, confidence, and age-appropriate self-defense for ages 5 and up, launching with our permanent studio.</p>
+        <a href="youth-program.html" class="program-link">View program →</a>
+      </div>
+      <div class="program-card">
+        <span class="program-status">Available by Request</span>
+        <h3>Law Enforcement &amp; Security</h3>
+        <p>Tactics developed from 30+ years training officers and private security teams — available for departmental and private bookings now by request.</p>
+        <a href="law-enforcement-security.html" class="program-link">View program →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">SHADOW <span>WARRIORS</span></div>
+  <div class="footer-links">
+    <a href="founder.html">Founder</a>
+    <a href="about-the-system.html">The System</a>
+    <a href="photos.html">Photos</a>
+    <a href="shadow-warriors-legacy-homepage.html#reviews">Reviews</a>
+    <a href="contact.html">Interest List</a>
+  </div>
+  <div class="footer-meta">Shadow Warriors Ninjitsu System — Original Since 1999</div>
+</footer>
+
+</body>
+</html>

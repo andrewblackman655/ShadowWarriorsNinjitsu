@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Shadow Warriors Ninjitsu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-hero{
+    position:relative; min-height:40vh;
+    display:flex; align-items:flex-end;
+    padding:64px 32px 52px;
+    background:
+      linear-gradient(180deg, rgba(17,18,20,0.35) 0%, rgba(17,18,20,0.72) 60%, rgba(17,18,20,0.98) 100%),
+      url('photos/founders.jpg') center 25% / cover no-repeat;
+  }
+  .breadcrumb{ font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel); margin-bottom:16px; display:block; }
+  .breadcrumb a{ color:var(--steel); } .breadcrumb a:hover{ color:var(--rice); }
+
+  .contact-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start; }
+  .contact-grid p{ color:#c9c3b4; font-size:15px; margin-bottom:24px; max-width:400px; }
+  .info-list{ list-style:none; margin-bottom:32px; }
+  .info-list li{ padding:16px 0; border-top:1px solid var(--hairline); }
+  .info-list li:first-child{ border-top:none; }
+  .info-label{ font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--steel); margin-bottom:5px; }
+  .info-value{ font-size:15px; color:var(--rice); }
+  .info-note{ font-size:12.5px; color:var(--steel); font-style:italic; }
+
+  form{ display:flex; flex-direction:column; gap:14px; background:var(--charcoal); border:1px solid var(--hairline); padding:32px; }
+  .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  label{ display:block; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--steel); margin-bottom:6px; }
+  input, select, textarea{
+    width:100%; background:var(--carbon); border:1px solid var(--hairline);
+    color:var(--rice); padding:13px 14px; font-size:14px; font-family:'Inter', sans-serif;
+  }
+  textarea{ resize:vertical; min-height:90px; }
+  input:focus, select:focus, textarea:focus{ outline:none; border-color:var(--crimson); }
+  .submit-btn{
+    background:var(--crimson); color:var(--rice); border:none;
+    font-size:13px; letter-spacing:0.06em; text-transform:uppercase;
+    padding:16px; cursor:pointer; margin-top:6px;
+  }
+  .submit-btn:hover{ background:#701515; }
+  @media (max-width:800px){ .contact-grid{ grid-template-columns:1fr; gap:32px; } .field-row{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">SHADOW <span>WARRIORS</span></div>
+  <div class="nav-links">
+    <a href="founder.html">Founder</a>
+    <a href="about-the-system.html">The System</a>
+    <a href="training.html">Training</a>
+    <a href="photos.html">Photos</a>
+    <a href="shadow-warriors-legacy-homepage.html#reviews">Reviews</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Join the Interest List</a>
+</nav>
+
+<header class="page-hero">
+  <div class="fade" style="max-width:640px;">
+    <span class="breadcrumb"><a href="shadow-warriors-legacy-homepage.html">Home</a> / Contact</span>
+    <h1 class="serif" style="font-size:clamp(30px,5vw,46px); color:var(--rice); line-height:1.1;">Stay Connected</h1>
+  </div>
+</header>
+
+<section>
+  <div class="inner">
+    <div class="contact-grid">
+      <div>
+        <p>Be the first to hear about upcoming private lessons, seminars, self-defense workshops, and future training opportunities.</p>
+        <ul class="info-list">
+          <li>
+            <div class="info-label">Email</div>
+            <div class="info-value">[your email address]</div>
+          </li>
+          <li>
+            <div class="info-label">Phone</div>
+            <div class="info-value">[your phone number]</div>
+          </li>
+          <li>
+            <div class="info-label">Location</div>
+            <div class="info-value">[City, State]</div>
+            <div class="info-note" style="margin-top:4px;">Private lessons available throughout the region — permanent studio location coming soon.</div>
+          </li>
+        </ul>
+      </div>
+
+      <form action="https://formspree.io/f/mnjkrvel" method="POST">
+        <input type="hidden" name="_subject" value="New Interest List Submission — Contact Page">
+        <div class="field-row">
+          <div><label for="fname">First Name</label><input type="text" id="fname" name="First Name" required></div>
+          <div><label for="lname">Last Name</label><input type="text" id="lname" name="Last Name" required></div>
+        </div>
+        <div class="field-row">
+          <div><label for="email">Email</label><input type="email" id="email" name="Email" required></div>
+          <div><label for="phone">Phone</label><input type="tel" id="phone" name="Phone"></div>
+        </div>
+        <div><label for="city">City</label><input type="text" id="city" name="City"></div>
+        <div>
+          <label for="interest">Training Interest</label>
+          <select id="interest" name="Training Interest">
+            <option>Adults</option>
+            <option>Youth</option>
+            <option>Private Lessons</option>
+            <option>Women's Programs</option>
+            <option>Weapons Training</option>
+            <option>Law Enforcement</option>
+            <option>Military</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" placeholder="Tell us a bit about what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Join the Interest List</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">SHADOW <span>WARRIORS</span></div>
+  <div class="footer-links">
+    <a href="founder.html">Founder</a>
+    <a href="about-the-system.html">The System</a>
+    <a href="photos.html">Photos</a>
+    <a href="shadow-warriors-legacy-homepage.html#reviews">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-meta">Shadow Warriors Ninjitsu System — Original Since 1999</div>
+</footer>
+
+</body>
+</html>
