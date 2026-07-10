@@ -188,12 +188,12 @@
     transform:translateY(-50%);
     writing-mode:vertical-rl;
     font-family:'Playfair Display', serif;
-    font-size:30px;
-    letter-spacing:0.3em;
+    font-size:clamp(70px, 13vw, 170px);
+    letter-spacing:0.08em;
     color:#8e1b1b;
     z-index:40;
     pointer-events:none;
     opacity:0.85;
+    max-height:92vh;
   }
-  .side-kanji-2{ right:56px; opacity:0.6; }
-  @media (max-width:900px){ .side-kanji, .side-kanji-2{ display:none; } }
+  @media (max-width:900px){ .side-kanji{ display:none; } }
