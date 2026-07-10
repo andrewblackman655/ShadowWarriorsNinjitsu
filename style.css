@@ -181,23 +181,28 @@
     .full-bleed .cred-grid, .full-bleed .program-grid{ grid-template-columns:1fr; }
   }
 
-  /* ===== VERTICAL KANJI STRIP (right edge) ===== */
+  /* ===== VERTICAL KANJI STRIP (right edge) — rotation-based, cross-browser safe ===== */
+  .side-kanji-wrap{
+    position:fixed;
+    top:50%; right:0;
+    transform:translateY(-50%);
+    width:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:40;
+    pointer-events:none;
+    overflow:visible;
+  }
   .side-kanji{
     display:inline-block;
-    position:fixed;
-    top:50%; right:14px;
-    transform:translateY(-50%);
-    -webkit-writing-mode:vertical-rl;
-    writing-mode:vertical-rl;
-    -webkit-text-orientation:upright;
-    text-orientation:upright;
+    white-space:nowrap;
+    transform:rotate(90deg);
+    transform-origin:center center;
     font-family:'Playfair Display', serif;
     font-size:clamp(70px, 13vw, 170px);
     letter-spacing:0.08em;
     color:#8e1b1b;
-    z-index:40;
-    pointer-events:none;
     opacity:0.85;
-    max-height:92vh;
   }
-  @media (max-width:900px){ .side-kanji{ display:none; } }
+  @media (max-width:900px){ .side-kanji-wrap{ display:none; } }
