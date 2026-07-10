@@ -181,27 +181,25 @@
     .full-bleed .cred-grid, .full-bleed .program-grid{ grid-template-columns:1fr; }
   }
 
-  /* ===== VERTICAL KANJI STRIP (right edge) — rotation-based, cross-browser safe ===== */
+  /* ===== VERTICAL KANJI STRIP (right edge) — individual upright characters, stacked ===== */
   .side-kanji-wrap{
     position:fixed;
-    top:50%; right:0;
+    top:50%; right:20px;
     transform:translateY(-50%);
-    width:60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     z-index:40;
     pointer-events:none;
-    overflow:visible;
   }
   .side-kanji{
-    display:inline-block;
-    white-space:nowrap;
-    transform:rotate(90deg);
-    transform-origin:center center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2px;
+  }
+  .side-kanji span{
+    display:block;
     font-family:'Playfair Display', serif;
-    font-size:clamp(70px, 13vw, 170px);
-    letter-spacing:0.08em;
+    font-size:clamp(47px, 8.7vw, 113px);
+    line-height:1;
     color:#8e1b1b;
     opacity:0.85;
   }
