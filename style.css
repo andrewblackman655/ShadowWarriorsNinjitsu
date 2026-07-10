@@ -33,7 +33,7 @@
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--hairline);
   }
-  .nav-brand{ font-family:'Playfair Display', serif; font-size:24px; letter-spacing:0.04em; color:var(--rice); }
+  .nav-brand{ font-family:'Playfair Display', serif; font-size:30px; letter-spacing:0.04em; color:var(--rice); }
   .nav-brand span{ color:var(--crimson); }
   .nav-links{ display:flex; align-items:center; gap:26px; }
   .nav-links a{ font-size:13px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--rice); }
@@ -180,3 +180,20 @@
   @media (max-width:700px){
     .full-bleed .cred-grid, .full-bleed .program-grid{ grid-template-columns:1fr; }
   }
+
+  /* ===== VERTICAL KANJI STRIP (right edge) ===== */
+  .side-kanji{
+    position:fixed;
+    top:50%; right:14px;
+    transform:translateY(-50%);
+    writing-mode:vertical-rl;
+    font-family:'Playfair Display', serif;
+    font-size:30px;
+    letter-spacing:0.3em;
+    color:#8e1b1b;
+    z-index:40;
+    pointer-events:none;
+    opacity:0.85;
+  }
+  .side-kanji-2{ right:56px; opacity:0.6; }
+  @media (max-width:900px){ .side-kanji, .side-kanji-2{ display:none; } }
