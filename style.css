@@ -198,7 +198,7 @@
   .side-kanji span{
     display:block;
     font-family:'Playfair Display', serif;
-    font-size:clamp(47px, 8.7vw, 113px);
+    font-size:clamp(38px, 7vw, 90px);
     line-height:1;
     color:#8e1b1b;
     opacity:0.85;
