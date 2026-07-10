@@ -186,7 +186,10 @@
     position:fixed;
     top:50%; right:14px;
     transform:translateY(-50%);
+    -webkit-writing-mode:vertical-rl;
     writing-mode:vertical-rl;
+    -webkit-text-orientation:upright;
+    text-orientation:upright;
     font-family:'Playfair Display', serif;
     font-size:clamp(70px, 13vw, 170px);
     letter-spacing:0.08em;
