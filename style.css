@@ -183,6 +183,7 @@
 
   /* ===== VERTICAL KANJI STRIP (right edge) ===== */
   .side-kanji{
+    display:inline-block;
     position:fixed;
     top:50%; right:14px;
     transform:translateY(-50%);
