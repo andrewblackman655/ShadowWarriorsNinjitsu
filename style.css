@@ -281,3 +281,25 @@
     display:flex; align-items:center; justify-content:center;
   }
   .lightbox-close:hover{ border-color:var(--crimson); color:var(--crimson); }
+
+  /* ===== PHOTO CAROUSEL (scroll-snap, native touch swipe) ===== */
+  .gallery-carousel{
+    display:flex;
+    gap:14px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding-bottom:14px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:var(--crimson) var(--charcoal, #1a1a1a);
+  }
+  .gallery-carousel::-webkit-scrollbar{ height:6px; }
+  .gallery-carousel::-webkit-scrollbar-thumb{ background:var(--crimson); }
+  .gallery-carousel .gallery-item{
+    flex:0 0 auto;
+    width:280px;
+    scroll-snap-align:start;
+  }
+  @media (max-width:600px){
+    .gallery-carousel .gallery-item{ width:78vw; }
+  }
