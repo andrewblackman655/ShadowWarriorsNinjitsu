@@ -45,6 +45,7 @@
     padding:10px 18px;
   }
   .nav-cta:hover{ background:var(--crimson); }
+  .nav-mobile-cta{ display:none; }
 
   /* ===== HAMBURGER MENU (mobile) ===== */
   .nav-toggle{
