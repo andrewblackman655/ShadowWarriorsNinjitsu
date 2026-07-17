@@ -104,7 +104,7 @@
     display:flex; align-items:flex-end;
     padding:64px 32px 88px;
     background:
-      linear-gradient(180deg, rgba(17,18,20,0.45) 0%, rgba(17,18,20,0.7) 60%, rgba(17,18,20,0.98) 100%),
+      linear-gradient(180deg, rgba(17,18,20,0.18) 0%, rgba(17,18,20,0.58) 60%, rgba(17,18,20,0.97) 100%),
       url('photos/hero-outdoor-lineup.jpg') center 30% / cover no-repeat;
   }
   .hero-inner{ max-width:620px; }
