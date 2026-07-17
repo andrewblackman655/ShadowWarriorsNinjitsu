@@ -85,6 +85,7 @@
     .nav-links a{ font-size:16px; }
     .nav-brand{ font-size:19px; }
     .nav-cta{ display:none; }
+    .nav-cta-group{ display:none !important; }
     .nav-links .nav-mobile-cta{
       display:block;
       margin-top:12px;
